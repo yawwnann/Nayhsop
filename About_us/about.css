@@ -1,0 +1,229 @@
+/* MAIN START */
+@font-face {
+  font-family: "Minecraft";
+  /*memberikan nama bebas untuk font*/
+  src: url("../font/Minecraft.ttf");
+  /*memanggil file font eksternalnya di folder nexa*/
+}
+
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+:root {
+  background-color: #222327;
+  color: #fff;
+}
+
+body {
+  min-height: auto;
+  /* background: #ffffff; */
+  background: #419583;
+
+  color: var(#fff);
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.photo-box {
+  width: auto;
+  margin-top: 60px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  background-size: cover;
+  z-index: 10;
+  opacity: 1;
+}
+
+.foto1 a img {
+  border: 3px solid rgb(255, 255, 255);
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: all 1s ease;
+}
+
+.foto1 a img:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+.foto2-3 {
+  display: flex;
+}
+.foto2-3 a img {
+  border: 3px solid rgb(255, 255, 255);
+  width: 140px;
+  height: 140px;
+  margin: 10px 20px;
+  border-radius: 50%;
+}
+.foto2-3 a img:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+
+.judul {
+  margin-top: 30px;
+}
+.judul p {
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+.top svg {
+  margin-top: -200px;
+  z-index: 999;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.deskripsi-tim {
+  background-color: #0a4d68;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  color: white;
+  margin-top: -10px;
+}
+
+.deskripsi1 {
+  display: flex;
+  color: white;
+  align-items: center;
+  width: 60%;
+  margin-left: 120px;
+  margin-bottom: 60px;
+}
+.deskripsi1 img {
+  border: 3px solid black;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.deskripsi1 .name-desk {
+  display: flex;
+  flex-direction: column;
+}
+.deskripsi1 .name-desk p .satu {
+  text-align: left;
+}
+.deskripsi2 {
+  display: flex;
+  flex-direction: row-reverse;
+  color: white;
+  align-items: center;
+  width: 60%;
+  margin-left: 500px;
+  margin-bottom: 60px;
+}
+.deskripsi2 img {
+  border: 3px solid black;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.deskripsi2 .name-desk {
+  display: flex;
+  flex-direction: column;
+}
+.deskripsi2 .name-desk p {
+  text-align: right;
+}
+
+.deskripsi3 {
+  display: flex;
+  color: white;
+  align-items: center;
+  width: 60%;
+  margin-left: 120px;
+  margin-bottom: 60px;
+}
+.deskripsi3 img {
+  border: 3px solid black;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.name-desk {
+  display: flex;
+  flex-direction: column;
+}
+.deskripsi3 .name-desk p .satu {
+  text-align: left;
+}
+
+/* animasi */
+.deskripsi1,
+.deskripsi2,
+.deskripsi3 {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.3s ease-in-out;
+}
+.deskripsi1.show,
+.deskripsi2.show,
+.deskripsi3.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.deskripsi1,
+.deskripsi3 {
+  animation: slideInLeft 1.5s ease-in forwards;
+}
+
+.deskripsi2 {
+  animation: slideInRight 1.5s ease-in forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.kerja-tim {
+  width: 100%;
+  height: 800px;
+  background-color: rgb(254, 254, 254);
+  /* margin-top: -150px; */
+}
+.kerja-tim img {
+  margin-left: 70%;
+}
+
+/* MAIN END */

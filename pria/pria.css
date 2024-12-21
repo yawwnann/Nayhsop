@@ -1,0 +1,235 @@
+body {
+  min-height: auto;
+  background: #ffffff;
+  color: var(#fff);
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+/* main */
+.container-main {
+  background-color: white;
+  margin-top: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-menu {
+  margin-top: 100px;
+  padding: 20px;
+  width: 20%;
+  height: auto;
+}
+
+.menu-luar {
+  margin-bottom: 20px;
+}
+
+.all {
+  height: auto;
+  width: auto;
+}
+.collapsible {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.content {
+  width: 215px;
+  height: auto;
+  display: none;
+  padding: 20px;
+}
+
+.content .items .item input {
+  height: 20px;
+  width: 20px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.items::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.items::-webkit-scrollbar-thumb {
+  background-color: #0a4d68;
+  border-radius: 5px;
+}
+
+.items::-webkit-scrollbar-track {
+  background-color: #ffff;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin: 5px;
+}
+
+.item a {
+  color: black;
+}
+
+.container-barang {
+  /* background-color: rgb(233, 233, 233); */
+  padding: 40px 20px;
+  margin-top: 50px;
+  background: white;
+  width: 80%;
+  height: auto;
+}
+
+.hasil-pria {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+#relevansi {
+  height: 30px;
+}
+
+.container-content {
+  height: auto;
+  width: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.barang-rekomendasi {
+  background-color: white;
+  width: 235px;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  display: none;
+  border-radius: 8px;
+  flex-basis: 235px;
+  margin-top: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.barang-rekomendasi:hover {
+  border: 0.1px solid black;
+}
+
+.barang-rekomendasi img {
+  width: 194px;
+  height: 230px;
+  margin-left: 10px;
+  transition: 0.3s ease;
+}
+.harga-chart {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.harga-chart i {
+  background-color: #0a4d68;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  border-radius: 20%;
+}
+.harga-chart i:hover {
+  background-color: #0acc78;
+}
+
+.barang-rekomendasi img:hover {
+  transform: scale(1.2) rotate(30deg);
+  transform-origin: center center;
+}
+
+.product-item-details {
+  text-align: left;
+  border-radius: 8px;
+}
+
+.barang-rekomendasi:nth-child(1),
+.barang-rekomendasi:nth-child(2),
+.barang-rekomendasi:nth-child(3),
+.barang-rekomendasi:nth-child(4),
+.barang-rekomendasi:nth-child(5),
+.barang-rekomendasi:nth-child(6),
+.barang-rekomendasi:nth-child(7),
+.barang-rekomendasi:nth-child(8) {
+  display: inline-block;
+}
+
+#lihat-lainya {
+  background-color: #0a4d68;
+  color: white;
+
+  width: auto;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 7px;
+}
+
+#lihat-lainya:hover {
+  color: white;
+  background-color: #0acc78;
+}
+.product-card {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.popup-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup-content {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 500px;
+  text-align: center;
+}
+
+#close-popup {
+  display: block;
+  margin-top: 10px;
+}
+
+/* end main */
