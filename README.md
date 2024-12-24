@@ -11,6 +11,5 @@ Selamat datang di proyek saya! Proyek kali ini merupakan sebuah website E-Commer
 
 
 ```bash
-git clone https://github.com/username/repository.git
-cd repository
-npm install
+git clone https://github.com/yawwnann/Nayhsop.git
+
