@@ -1,7 +1,7 @@
 # **NAYSHOP**  
 🚀 *E-Commerce Sepatu*  
 
-Selamat datang di proyek **NAYSHOP**! Proyek ini adalah sebuah **website E-Commerce** yang dibuat untuk memudahkan pengguna dalam membeli sepatu secara online. Website ini dilengkapi dengan fitur-fitur lengkap dan mudah digunakan.
+Hello, Selamat datang di proyek **NAYSHOP**! Proyek ini adalah sebuah **website E-Commerce** yang dibuat untuk memudahkan pengguna dalam membeli sepatu secara online. Website ini dilengkapi dengan fitur-fitur lengkap dan mudah digunakan.
 
 ---
 
